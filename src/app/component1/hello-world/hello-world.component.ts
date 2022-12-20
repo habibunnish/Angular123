@@ -12,9 +12,7 @@ export class HelloWorldComponent {
   message='Hello , World !';
   sayMessage(){
     alert(this.message);
-  }
- 
-  
+  } 
   items:any[]=[];
   constructor(){
     this.items.push({"name" :"arthi" ,"age":21});
