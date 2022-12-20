@@ -35,12 +35,7 @@ export class AdBannerComponent implements OnInit,OnDestroy {
     const timer: ReturnType<typeof setInterval>=setInterval(()=>{
       this.loadComponent();
     },3000)
-
-  
-  // this.interval=setInterval(()=>{
-  //   this.loadComponent();
-
-  // },3000)
-}
+   
+  }
 
 }
