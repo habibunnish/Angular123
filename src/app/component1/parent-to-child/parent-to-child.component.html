@@ -1,0 +1,14 @@
+<p>parent-to-child works!</p>
+<div align="position">
+    <h1>Parent sent me a message</h1>{{message|uppercase}}
+</div><br>
+
+<div align="left">
+    <button (click)="sendMessage()"> Send responds</button>
+</div>
+
+<!--child sending message to parent-->
+<div>
+    <h1>child sending :{{cMessage}}</h1>
+</div>
+

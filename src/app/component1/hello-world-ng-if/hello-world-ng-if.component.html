@@ -1,0 +1,36 @@
+<h2>Hello world :ngIf</h2>
+<button type="button" (click)="onEditClick()">Make text editable</button>
+<div *ngIf="canEdit ; else noEdit">
+    <p>you can edit the following para</p>
+</div>
+<ng-template #noEdit >
+    <p>the following para is read only. tryclicking the button </p>
+</ng-template>
+<p [contentEditable]="canEdit">{{message}}</p>
+
+<!-- <div *ngFor="let item of items be " [ngSwitch]="item.country">
+    <div *ngSWitchCase="usa">{{ item.name}} belongs to this country</div>
+    <div *ngSWitchCase="aus">{{ item.name}} belongs to this country</div>
+    <div *ngSWitchCase="ind">{{ item.name}} belongs to this country</div>
+    <div *ngSWitchCase="pak">{{ item.name}} belongs to this country</div>
+    <div *ngSWitchCase="ban">{{ item.name}} belongs to this country</div>
+    <div *ngSWitchDefault>{{ item.name}} does not belong to  any country</div>
+
+</div> -->
+
+<div [ngStyle]="{color:'red'}">COLOR ME</div>
+<div [ngStyle]="{color :myFavColor}">STYLING COLOR</div>
+
+<div [ngClass]="'orange-text'">orange text using class</div>
+<!--json format sending-->
+<div [ngClass]="{'green-text':true , 'text-lg':false}">orangetext</div>
+
+<!--two way binding-->
+<!-- <div>
+    <input [(ngModel)]="value" type="text">{{value}}
+</div> -->
+
+
+<!--event binding-->
+<button (click)="onClick()">event binding button</button>
+
