@@ -11,6 +11,7 @@ import { HeroJobAdComponent } from './component2/hero-job-ad/hero-job-ad.compone
 import { HeroProfileComponent } from './component2/hero-profile/hero-profile.component';
 import { FormComponent } from './component3/form/form.component';
 import { CustomPipesComponent } from './component4/custom-pipes/custom-pipes.component';
+import { ProductComponent } from './component4/product/product.component';
 
 import { StylingComponent } from './component4/styling/styling.component';
 
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path:'form',component:FormComponent},
   {path:'Styling',component:StylingComponent},
   {path:'custom-pipes',component:CustomPipesComponent},
+  {path:'product',component:ProductComponent},
  
 ];
 

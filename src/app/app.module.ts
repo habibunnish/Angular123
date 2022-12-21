@@ -18,6 +18,8 @@ import { FormsModule } from '@angular/forms';
 import { StylingComponent } from './component4/styling/styling.component';
 import { CustomPipesComponent } from './component4/custom-pipes/custom-pipes.component';
 import { SalutationPipe } from './salutation.pipe';
+import { ProductComponent } from './component4/product/product.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 
@@ -38,6 +40,8 @@ import { SalutationPipe } from './salutation.pipe';
     StylingComponent,
     CustomPipesComponent,
     SalutationPipe,
+    ProductComponent,
+    HighlightDirective,
     
   
 
