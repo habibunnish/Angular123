@@ -23,7 +23,13 @@
 </div> -->
 <br>
 
-<p style="text-align: center;" appHighlight>HIGHLIGHT ME !</p>
-
+<div style="text-align: center;">
+  <p  appHighlight>HIGHLIGHT ME !</p>
+  <p [appHighlight]="color" defaultColor=""violet>HIGHLIGHT ON ME TOO</p>
+  <P appHighlight="red">Highlight in red</P>
+  <h2>ngNonBindanle</h2>
+  <p> use ngNonBindable to stop evaluation</p>
+  <p ngNonBindable [appHighlight]="'yellow'">this should not evaluate : {{ 1+1 }} but will highlight in yellow color</p>
+</div>
 
 

@@ -20,4 +20,5 @@ export class AppComponent implements OnInit{
    this.ads=this.adService.getAds();
    
  } 
+ color='';
 }
