@@ -9,13 +9,16 @@
   <li><a routerLink="hero-job-ad">hero job ad</a></li>
   <li><a routerLink="form">form-example</a></li>
   <li><a routerLink="Styling">styling -examples</a></li>
+  <li><a routerLink="custom-pipes">custom-pipe</a></li>
+
 
 </ul>
 <div> <app-ad-banner [ads]="ads"></app-ad-banner></div>
 
 <router-outlet></router-outlet>
 
-<app-parent-to-child [message]="parentMessage" (childMessage)="cMessage=$event"></app-parent-to-child>
+<!-- <app-parent-to-child [message]="parentMessage" (childMessage)="cMessage=$event"></app-parent-to-child>
 <div>
   <h4>child sending :{{cMessage}}</h4>
-</div>
+</div> -->
+

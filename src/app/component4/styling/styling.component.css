@@ -1,6 +1,7 @@
 :host{
     font-style: italic;
     text-align: center;
+    background-color: crimson;
     
 }
 :host(.active){
@@ -9,3 +10,9 @@
 /* :host h2{
     background-color: tomato;
 } */
+:host-context(.active){
+    font-style: bold;
+}
+:host::ng-deep h2{
+font-size: small;
+}

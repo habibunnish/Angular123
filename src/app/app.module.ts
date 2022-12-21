@@ -16,6 +16,10 @@ import { AdComponent } from './component2/ad/ad.component';
 import { FormComponent } from './component3/form/form.component';
 import { FormsModule } from '@angular/forms';
 import { StylingComponent } from './component4/styling/styling.component';
+import { CustomPipesComponent } from './component4/custom-pipes/custom-pipes.component';
+import { SalutationPipe } from './salutation.pipe';
+
+
 
 
 @NgModule({
@@ -32,6 +36,11 @@ import { StylingComponent } from './component4/styling/styling.component';
     AdComponent,
     FormComponent,
     StylingComponent,
+    CustomPipesComponent,
+    SalutationPipe,
+    
+  
+
  
   ],
   imports: [

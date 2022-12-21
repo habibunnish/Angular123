@@ -10,6 +10,8 @@ import { AdComponent } from './component2/ad/ad.component';
 import { HeroJobAdComponent } from './component2/hero-job-ad/hero-job-ad.component';
 import { HeroProfileComponent } from './component2/hero-profile/hero-profile.component';
 import { FormComponent } from './component3/form/form.component';
+import { CustomPipesComponent } from './component4/custom-pipes/custom-pipes.component';
+
 import { StylingComponent } from './component4/styling/styling.component';
 
 const routes: Routes = [
@@ -23,8 +25,9 @@ const routes: Routes = [
   {path:'hero-job-ad',component:HeroJobAdComponent},
   {path:'hero-profile',component:HeroProfileComponent},
   {path:'form',component:FormComponent},
-  {path:'Styling',component:StylingComponent}
-
+  {path:'Styling',component:StylingComponent},
+  {path:'custom-pipes',component:CustomPipesComponent},
+ 
 ];
 
 @NgModule({
