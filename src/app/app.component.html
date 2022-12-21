@@ -3,15 +3,19 @@
  <li> <a  routerLink="hello-world" >hello-world link</a><br></li>
   <li><a routerLink="hello-world-ng-if">hello world ng if </a><br></li>
   <li><a  routerLink="pipes">pipes concept</a><br></li>
- <li> <a  routerLink="parent-to-child">parent to child</a></li>
-  <!-- <app-parent-to-child [message]="parentMessage" (childMessage)="cMessage=($event)"></app-parent-to-child> -->
   <li><a routerLink="../ad">ad</a>ad</li>
   <li><a routerLink="hero-profile">hero-profile</a></li>
   <li><a routerLink="ad-banner">ad banner</a></li>
   <li><a routerLink="hero-job-ad">hero job ad</a></li>
   <li><a routerLink="form">form-example</a></li>
+  <li><a routerLink="Styling">styling -examples</a></li>
 
 </ul>
 <div> <app-ad-banner [ads]="ads"></app-ad-banner></div>
 
 <router-outlet></router-outlet>
+
+<app-parent-to-child [message]="parentMessage" (childMessage)="cMessage=$event"></app-parent-to-child>
+<div>
+  <h4>child sending :{{cMessage}}</h4>
+</div>

@@ -13,11 +13,11 @@ export class AdBannerComponent implements OnInit,OnDestroy {
   currentAdIndex=-1;
   @ViewChild(AdDirective,{static :true})adHost !:AdDirective;
   interval:number|undefined;
+
   ngOnInit():void{
     this.loadComponent();
     this.getAds();
-
-  }
+   }
   ngOnDestroy(): void {
     clearInterval(this.interval);
   }
@@ -32,10 +32,12 @@ export class AdBannerComponent implements OnInit,OnDestroy {
     componentRef.instance.data = adItem.data;
   }
   getAds(){
-    const timer: ReturnType<typeof setInterval>=setInterval(()=>{
+    let timer: ReturnType<typeof setInterval>
+    timer=setInterval(()=>{
       this.loadComponent();
     },3000)
    
   }
+ 
 
 }

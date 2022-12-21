@@ -1,0 +1,11 @@
+:host{
+    font-style: italic;
+    text-align: center;
+    
+}
+:host(.active){
+    font-weight: bold;
+}
+/* :host h2{
+    background-color: tomato;
+} */

@@ -15,5 +15,4 @@ export class ParentToChildComponent {
     this.childMessage.emit(" THankyou parent for clarifying doubts");
   }
  
-  cMessage='Child sending message';
 }

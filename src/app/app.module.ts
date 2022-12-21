@@ -15,6 +15,7 @@ import { AdService } from './component2/ad.service';
 import { AdComponent } from './component2/ad/ad.component';
 import { FormComponent } from './component3/form/form.component';
 import { FormsModule } from '@angular/forms';
+import { StylingComponent } from './component4/styling/styling.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { FormsModule } from '@angular/forms';
     AdDirective,
     AdComponent,
     FormComponent,
+    StylingComponent,
  
   ],
   imports: [
