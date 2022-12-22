@@ -10,13 +10,14 @@ import { AdComponent } from './component2/ad/ad.component';
 import { HeroJobAdComponent } from './component2/hero-job-ad/hero-job-ad.component';
 import { HeroProfileComponent } from './component2/hero-profile/hero-profile.component';
 import { FormComponent } from './component3/form/form.component';
+import { AsyncPromisePipeComponent } from './component4/async-promise-pipe/async-promise-pipe.component';
 import { CustomPipesComponent } from './component4/custom-pipes/custom-pipes.component';
 import { ProductComponent } from './component4/product/product.component';
-
 import { StylingComponent } from './component4/styling/styling.component';
+import { BasicCheckComponent } from './componet3/basic-check/basic-check.component';
 
 const routes: Routes = [
-  
+  {path:'app',component:AppComponent},
   {path:'hello-world',component:HelloWorldComponent},
   {path:'hello-world-ng-if',component:HelloWorldNgIfComponent},
   {path:'parent-to-child',component:ParentToChildComponent},
@@ -29,6 +30,9 @@ const routes: Routes = [
   {path:'Styling',component:StylingComponent},
   {path:'custom-pipes',component:CustomPipesComponent},
   {path:'product',component:ProductComponent},
+  {path:'async-promise-pipe',component:AsyncPromisePipeComponent},
+  {path:'basic-check',component:BasicCheckComponent},
+  
  
 ];
 

@@ -7,15 +7,7 @@
 <div style="color:red" *ngIf="isAdmin()">Hi Habibunnisha</div>
 <div style="color: aqua;" *ngIf="!isAdmin()">hi</div>
 <div>
-<ul>
-    <li *ngFor="let item of items be">{{item.name}} age is {{item.age}}</li>
-</ul>
 
-<ul>
-    <ng-container *ngFor="let item of items be">
-        <li *ngIf="item.age >21">{{item.name}} age is {{item.age}}</li>
-    </ng-container>
-</ul>
 <button type="button"
 [disabled]="canClick"
 (click)="sayMessage()">

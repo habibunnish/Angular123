@@ -1,0 +1,12 @@
+<b>Current Message </b> -{{message}}<br>
+<b>Updated Approval Message -</b>{{approvalText}}
+
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="approvalText">Approval Message</label>
+            <input type="text" name="approvalText" [(ngModel)]="approvalText" class="form-control" id="approvalText">
+        </div>
+        <button style="text-align:center" (click)="submit()">Approve Basic</button>
+    </form>
+</div>

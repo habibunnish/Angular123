@@ -13,14 +13,7 @@ export class HelloWorldComponent {
   sayMessage(){
     alert(this.message);
   } 
-  items:any[]=[];
-  constructor(){
-    this.items.push({"name" :"arthi" ,"age":21});
-    this.items.push({"name" :"nisha" ,"age":20});
-    this.items.push({"name" :"dhanush" ,"age":24});
-    this.items.push({"name" :"san" ,"age":29});
-    
-  }
+
   parentMessage="Hello  Child any query approch me ";
   cMessage='Child sending message';
   title='angularwork';

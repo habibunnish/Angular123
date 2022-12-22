@@ -8,6 +8,20 @@
 </ng-template>
 <p [contentEditable]="canEdit">{{message}}</p>
 
+<pre></pre>
+
+<ul>
+    <li *ngFor="let item of items be">{{item.name}} age is {{item.age}}</li>
+</ul>
+
+<ul>
+    <ng-container *ngFor="let item of items be">
+        <li *ngIf="item.age >21">{{item.name}} age is {{item.age}}</li>
+    </ng-container>
+</ul>
+
+
+
 <!-- <div *ngFor="let item of items be " [ngSwitch]="item.country">
     <div *ngSWitchCase="usa">{{ item.name}} belongs to this country</div>
     <div *ngSWitchCase="aus">{{ item.name}} belongs to this country</div>

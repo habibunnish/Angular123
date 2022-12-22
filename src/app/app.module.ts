@@ -20,6 +20,10 @@ import { CustomPipesComponent } from './component4/custom-pipes/custom-pipes.com
 import { SalutationPipe } from './salutation.pipe';
 import { ProductComponent } from './component4/product/product.component';
 import { HighlightDirective } from './highlight.directive';
+import { AsyncPromisePipeComponent } from './component4/async-promise-pipe/async-promise-pipe.component';
+import { BasicCheckComponent } from './componet3/basic-check/basic-check.component';
+
+
 
 
 
@@ -42,11 +46,12 @@ import { HighlightDirective } from './highlight.directive';
     SalutationPipe,
     ProductComponent,
     HighlightDirective,
-    
-  
-
- 
+    AsyncPromisePipeComponent,
+    BasicCheckComponent,
+   
+   
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -6,18 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./hello-world-ng-if.component.css']
 })
 export class HelloWorldNgIfComponent {
-  message='im read only';
-  canEdit=false;
-  
+  canEdit=true;
   onEditClick(){
       this.canEdit= !this.canEdit;
       if(this.canEdit){
-        this.message='you van edit me';
+        this.message='you can edit me';
          }
       else{
         this.message='im read only';
       }
   }
+  message='im read only';
   // items:any[]=[];
   // constructor(){
   //   this.items.push({"name":"bob","age":27,"country":"usa"});
@@ -30,6 +29,14 @@ export class HelloWorldNgIfComponent {
    public value= "";
   myFavColor:string="green";
   onClick(){
-    console.log("you clicked")
+   alert("you have clicked button");
+  }
+  items:any[]=[];
+  constructor(){
+    this.items.push({"name" :"arthi" ,"age":21});
+    this.items.push({"name" :"nisha" ,"age":20});
+    this.items.push({"name" :"dhanush" ,"age":24});
+    this.items.push({"name" :"san" ,"age":29});
+    
   }
 }
