@@ -10,11 +10,11 @@ export class AdService {
     return [
       new AdItem(
         HeroProfileComponent,
-        {name:'Bombasto',bio:'Brave as they came'}
+        {name:'Bombasto',bio:'Brave as they come'}
       ),
       new AdItem(
         HeroProfileComponent,
-        {name:'Dr.Iq',bio:'smart as they come'}
+        {name:'Dr.Iq',bio:'smart as they become'}
       ),
       new AdItem(
         HeroProfileComponent,

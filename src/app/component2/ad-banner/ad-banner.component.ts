@@ -9,8 +9,11 @@ import { AdItem } from '../AdItem';
   styleUrls: ['./ad-banner.component.css']
 })
 export class AdBannerComponent implements OnInit,OnDestroy {
+ 
   @Input () ads :AdItem[]=[];
+
   currentAdIndex=-1;
+
   @ViewChild(AdDirective,{static :true})adHost !:AdDirective;
   interval:number|undefined;
 
@@ -31,6 +34,7 @@ export class AdBannerComponent implements OnInit,OnDestroy {
     const componentRef = viewContainerRef.createComponent<AdComponent>(adItem.component);
     componentRef.instance.data = adItem.data;
   }
+
   getAds(){
     let timer: ReturnType<typeof setInterval>
     timer=setInterval(()=>{

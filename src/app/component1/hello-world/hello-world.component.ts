@@ -24,5 +24,6 @@ export class HelloWorldComponent {
   isAdmin():boolean{
     return true;
   }
+  // NewMessage=""
 
 }

@@ -9,6 +9,7 @@ import { AdBannerComponent } from './component2/ad-banner/ad-banner.component';
 import { AdComponent } from './component2/ad/ad.component';
 import { HeroJobAdComponent } from './component2/hero-job-ad/hero-job-ad.component';
 import { HeroProfileComponent } from './component2/hero-profile/hero-profile.component';
+import { EmployeeListComponent } from './component3/employee-list/employee-list.component';
 import { FormComponent } from './component3/form/form.component';
 import { AsyncPromisePipeComponent } from './component4/async-promise-pipe/async-promise-pipe.component';
 import { CustomPipesComponent } from './component4/custom-pipes/custom-pipes.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path:'product',component:ProductComponent},
   {path:'async-promise-pipe',component:AsyncPromisePipeComponent},
   {path:'basic-check',component:BasicCheckComponent},
+  {path:'employee-list',component:EmployeeListComponent}
   
  
 ];

@@ -21,4 +21,16 @@ export class AppComponent implements OnInit{
    
  } 
  color='';
+
+ name:string | undefined;
+ get name2() {
+  return (this.name || '').toUpperCase();
+}
+
+toggleName() {
+  if (!this.name) this.name = 'Angular';
+  this.name += '.';
+}
+ 
+ 
 }

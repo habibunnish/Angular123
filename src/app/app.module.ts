@@ -22,10 +22,7 @@ import { ProductComponent } from './component4/product/product.component';
 import { HighlightDirective } from './highlight.directive';
 import { AsyncPromisePipeComponent } from './component4/async-promise-pipe/async-promise-pipe.component';
 import { BasicCheckComponent } from './componet3/basic-check/basic-check.component';
-
-
-
-
+import { EmployeeListComponent } from './component3/employee-list/employee-list.component';
 
 
 @NgModule({
@@ -48,7 +45,7 @@ import { BasicCheckComponent } from './componet3/basic-check/basic-check.compone
     HighlightDirective,
     AsyncPromisePipeComponent,
     BasicCheckComponent,
-   
+     EmployeeListComponent,
    
   ],
 
