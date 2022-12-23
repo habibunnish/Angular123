@@ -15,6 +15,8 @@ import { AsyncPromisePipeComponent } from './component4/async-promise-pipe/async
 import { CustomPipesComponent } from './component4/custom-pipes/custom-pipes.component';
 import { ProductComponent } from './component4/product/product.component';
 import { StylingComponent } from './component4/styling/styling.component';
+import { OnChangesParentComponent } from './component5/on-changes-parent/on-changes-parent.component';
+import { OnChangesComponent } from './component5/on-changes/on-changes.component';
 import { BasicCheckComponent } from './componet3/basic-check/basic-check.component';
 
 const routes: Routes = [
@@ -33,8 +35,9 @@ const routes: Routes = [
   {path:'product',component:ProductComponent},
   {path:'async-promise-pipe',component:AsyncPromisePipeComponent},
   {path:'basic-check',component:BasicCheckComponent},
-  {path:'employee-list',component:EmployeeListComponent}
-  
+  {path:'employee-list',component:EmployeeListComponent},
+  {path:'on-changes-parent',component:OnChangesParentComponent},
+  {path:'on-changes',component:OnChangesComponent},
  
 ];
 

@@ -23,6 +23,16 @@ import { HighlightDirective } from './highlight.directive';
 import { AsyncPromisePipeComponent } from './component4/async-promise-pipe/async-promise-pipe.component';
 import { BasicCheckComponent } from './componet3/basic-check/basic-check.component';
 import { EmployeeListComponent } from './component3/employee-list/employee-list.component';
+import { AfterContentParentComponent } from './component5/after-content-parent/after-content-parent.component';
+import { AfterViewParentComponent } from './component5/after-view-parent/after-view-parent.component';
+import { ChildViewComponent } from './component5/child-view/child-view.component';
+import { ChildComponent } from './component5/child/child.component';
+import { CounterParentComponent } from './component5/counter-parent/counter-parent.component';
+import { CounterComponent } from './component5/counter/counter.component';
+import { DoCheckParentComponent } from './component5/do-check-parent/do-check-parent.component';
+import { DoCheckComponent } from './component5/do-check/do-check.component';
+import { OnChangesParentComponent } from './component5/on-changes-parent/on-changes-parent.component';
+import { OnChangesComponent } from './component5/on-changes/on-changes.component';
 
 
 @NgModule({
@@ -46,6 +56,16 @@ import { EmployeeListComponent } from './component3/employee-list/employee-list.
     AsyncPromisePipeComponent,
     BasicCheckComponent,
      EmployeeListComponent,
+     AfterContentParentComponent,
+     AfterViewParentComponent,
+     ChildViewComponent,
+     ChildComponent,
+     CounterParentComponent,
+     CounterComponent,
+     DoCheckParentComponent,
+     DoCheckComponent,
+     OnChangesParentComponent,
+     OnChangesComponent,
    
   ],
 

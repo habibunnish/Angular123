@@ -14,12 +14,15 @@
     <li><a routerLink="product">Product</a></li>
     <li><a routerLink="async-promise-pipe">AsyncPromisePipe</a></li>
     <li><a routerLink="basic-check">BasicCheck</a></li>
-    <li><a routerLink=""></a></li>
+    <li><a routerLink="on-changes-parent">OnChangeParent-cycle</a></li>
+
   </ul>
 </nav>
 <div> <app-ad-banner [ads]="ads"></app-ad-banner></div>
 
 <router-outlet></router-outlet>
+
+<app-on-changes [hero]="hero"></app-on-changes>
 
 <app-parent-to-child [message]="parentMessage" (childMessage)="cMessage=$event"></app-parent-to-child>
 

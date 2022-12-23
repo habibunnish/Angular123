@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-hello-world',
@@ -24,6 +24,6 @@ export class HelloWorldComponent {
   isAdmin():boolean{
     return true;
   }
-  // NewMessage=""
+
 
 }

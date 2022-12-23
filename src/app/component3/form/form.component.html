@@ -1,16 +1,16 @@
 <h1 style="color: blue;">Application form</h1>
 
 <div align="left" class="container mb-3">
-    <form   (ngSubmit)="submit()">
+    <form  #login="ngForm" (ngSubmit)="submit(login)">
         <div class="form-group">
             <label for="fname">First Name </label>
             <input #name="ngModel" required minlength="2" maxlength="10"   type="text" name="fname"  class="form-control" ngModel> 
             
-            <!-- <div *ngIf="name.touched && name.invalid" class="alert alert-danger">invalid
-                <p *ngIf="name.errors.required">Username Required!</p>
+            <div *ngIf="name.touched && name.invalid" class="alert alert-danger">invalid
+                <p *ngIf="name.errors?.['required']">Username Required!</p>
 
-                <p *ngIf="name.errors.minlength">Sorry! Short Username</p>
-            </div> -->
+                <p *ngIf="name.errors ?.['minlength']">Sorry! Short Username</p>
+            </div>
 
         </div>
         <pre></pre>
