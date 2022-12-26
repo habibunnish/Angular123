@@ -1,0 +1,10 @@
+<div class="Parent">
+    <h2>Spy Villain Names</h2>
+    <label for="villain-name">Villain Name : </label><br>
+    <input type="text" id="villain-name" [(ngModel)]="newName" (keyup.enter)="addVillain()"><br><br>
+    <button type="button" (click)="addVillain()">AddVillain</button> 
+    <button type="button" (click)="reset()">Reset Name</button><br><br>
+    <div class="info">
+        <p *ngFor="let villain of villains">{{villain}}</p>
+    </div>
+</div>

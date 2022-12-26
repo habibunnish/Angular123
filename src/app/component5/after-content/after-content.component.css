@@ -1,0 +1,9 @@
+.container{
+    text-align: center;
+    font-style: italic;
+}
+#input{
+    border-radius: 30px  25px 30px;
+    border-color: blue;
+    
+}

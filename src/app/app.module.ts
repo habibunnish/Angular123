@@ -23,16 +23,24 @@ import { HighlightDirective } from './highlight.directive';
 import { AsyncPromisePipeComponent } from './component4/async-promise-pipe/async-promise-pipe.component';
 import { BasicCheckComponent } from './componet3/basic-check/basic-check.component';
 import { EmployeeListComponent } from './component3/employee-list/employee-list.component';
-import { AfterContentParentComponent } from './component5/after-content-parent/after-content-parent.component';
-import { AfterViewParentComponent } from './component5/after-view-parent/after-view-parent.component';
+ import { AfterContentParentComponent } from './component5/after-content-parent/after-content-parent.component';
 import { ChildViewComponent } from './component5/child-view/child-view.component';
-import { ChildComponent } from './component5/child/child.component';
-import { CounterParentComponent } from './component5/counter-parent/counter-parent.component';
-import { CounterComponent } from './component5/counter/counter.component';
+// import { ChildComponent } from './component5/child/child.component';
 import { DoCheckParentComponent } from './component5/do-check-parent/do-check-parent.component';
-import { DoCheckComponent } from './component5/do-check/do-check.component';
 import { OnChangesParentComponent } from './component5/on-changes-parent/on-changes-parent.component';
 import { OnChangesComponent } from './component5/on-changes/on-changes.component';
+import { AfterContentComponent } from './component5/after-content/after-content.component';
+import { SpyComponent } from './component5/spy/spy.component';
+import { SpyDirective } from './component5/spy.directive';
+import { InspectorComponent } from './component6/inspector/inspector.component';
+import { ParentComponent } from './component6/parent/parent.component';
+import { ChildComponent } from './component6/child/child.component';
+import { AsyncObservablePipeComponent } from './component4/async-observable-pipe/async-observable-pipe.component';
+import { HeroListComponent } from './FactoryPattern/hero-list/hero-list.component';
+import { HeroesTspComponent } from './FactoryPattern/heroes-tsp/heroes-tsp.component';
+import { HeroesComponent } from './FactoryPattern/heroes/heroes.component';
+
+
 
 
 @NgModule({
@@ -57,15 +65,22 @@ import { OnChangesComponent } from './component5/on-changes/on-changes.component
     BasicCheckComponent,
      EmployeeListComponent,
      AfterContentParentComponent,
-     AfterViewParentComponent,
      ChildViewComponent,
      ChildComponent,
-     CounterParentComponent,
-     CounterComponent,
      DoCheckParentComponent,
-     DoCheckComponent,
      OnChangesParentComponent,
      OnChangesComponent,
+     AfterContentComponent,
+     SpyComponent,
+     SpyDirective,
+     DoCheckParentComponent,
+     InspectorComponent,
+     ParentComponent,
+    ChildComponent,
+    AsyncObservablePipeComponent,
+    HeroListComponent,
+    HeroesTspComponent,
+    HeroesComponent
    
   ],
 

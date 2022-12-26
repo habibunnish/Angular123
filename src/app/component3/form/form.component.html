@@ -4,12 +4,12 @@
     <form  #login="ngForm" (ngSubmit)="submit(login)">
         <div class="form-group">
             <label for="fname">First Name </label>
-            <input #name="ngModel" required minlength="2" maxlength="10"   type="text" name="fname"  class="form-control" ngModel> 
+            <input #name="ngModel" required pattern="[a-z]{4}"   maxlength="10"   type="text" name="fname"  class="form-control" ngModel> 
             
             <div *ngIf="name.touched && name.invalid" class="alert alert-danger">invalid
-                <p *ngIf="name.errors?.['required']">Username Required!</p>
+                <p *ngIf="name.errors ?.['required pattern']">Pattern Required!</p>
 
-                <p *ngIf="name.errors ?.['minlength']">Sorry! Short Username</p>
+                <p *ngIf="name.errors ?.['maxlength']">Sorry! Very Big Username This Is</p>
             </div>
 
         </div>

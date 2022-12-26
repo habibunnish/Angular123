@@ -1,12 +1,13 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
-import { Hero } from '../hero';
+import { Villain } from '../villain';
+
 @Component({
   selector: 'app-on-changes',
   templateUrl: './on-changes.component.html',
   styleUrls: ['./on-changes.component.css']
 })
 export class OnChangesComponent {
-  @Input() hero!:Hero;
+  @Input() villain!:Villain;
   // @Input() power ='';
 
   changeLog: string[]=[];

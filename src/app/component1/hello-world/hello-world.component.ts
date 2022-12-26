@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HelloWorldComponent {
   fontColor='green';
-  // sayHelloId=0;
+  sayHelloId=0;
   canClick=false;
   message='Hello , World !';
   sayMessage(){
@@ -16,6 +16,7 @@ export class HelloWorldComponent {
 
   parentMessage="Hello  Child any query approch me ";
   cMessage='Child sending message';
+  
   title='angularwork';
   image_width:number=300;
   displayAlert(){

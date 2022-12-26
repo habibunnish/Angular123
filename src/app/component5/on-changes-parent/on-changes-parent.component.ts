@@ -1,6 +1,6 @@
-import { Component, ViewChild } from '@angular/core';
-import { Hero } from '../hero';
+import { Component, Input, ViewChild } from '@angular/core';
 import { OnChangesComponent } from '../on-changes/on-changes.component';
+import { Villain } from '../villain';
 
 @Component({
   selector: 'app-on-changes-parent',
@@ -8,7 +8,7 @@ import { OnChangesComponent } from '../on-changes/on-changes.component';
   styleUrls: ['./on-changes-parent.component.css']
 })
 export class OnChangesParentComponent {
-  hero !:Hero;
+ villain !:Villain;
   // power='';
   title='OnChanges';
   @ViewChild(OnChangesComponent) childView!:OnChangesComponent;
@@ -16,7 +16,7 @@ export class OnChangesParentComponent {
     this.reset();
   }
   reset(){
-    this.hero=new Hero('Windstorm');
+    this.villain=new Villain('Windstorm');
     // this.power='sing';
     if(this.childView){
       this.childView.reset();

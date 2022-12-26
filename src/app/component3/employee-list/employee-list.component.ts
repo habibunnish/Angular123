@@ -46,6 +46,7 @@ export class EmployeeListComponent{
  })
  @Input()
  name:string | undefined;
+name2: string|undefined;
 
 
 

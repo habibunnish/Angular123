@@ -1,6 +1,6 @@
 <div style="text-align:center">
     <h1>
-        Hello {{title}}
+        🌼️ Hello {{title}}🌼️
     </h1>
     <img width="{{image_width}}" (click)="displayAlert()"  alt="pic logo" src="../assets/photos/Browniebear.jpeg">
 </div>
@@ -16,8 +16,13 @@ Trigger alert message showing
 
 <p [style.color]="fontColor">YOU CAN SET MY COLOR IN THE COMPONENET</p>
 
-<p>My color is {{fontColor}}</p>
+<p>My color is {{fontColor}}</p><hr>
 
+<app-parent-to-child [message]="parentMessage" (childMessage)="cMessage=$event"></app-parent-to-child>
+<div>
+    <h4>child sending :{{cMessage}}</h4>
+  </div>
+  <br>
 
 
 

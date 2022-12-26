@@ -1,1 +1,13 @@
-<p>do-check-parent works!</p>
+<div class="container">
+    <div class="input-container">
+        <div class="title">Do-Check</div>
+        <div class="form-group">
+            <input type="text" class="form-control" (input)="onTextChanges($event)">
+        </div>
+    </div>
+    <div class="text-container">
+        <!-- <div class="title">Do check</div> -->
+        <div class="result" *ngFor="let log of logs">{{log}}</div>
+    </div>
+  
+</div>

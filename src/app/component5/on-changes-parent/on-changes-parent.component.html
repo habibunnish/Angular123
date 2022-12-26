@@ -1,9 +1,9 @@
 <h2>{{title}}</h2>
 <!-- <label for="power-input">Power: </label>
 <input type="text" id="power-input" [(ngModel)]="power"> -->
-<label for="hero-name"> Hero.name: </label>
-<input type="text" id="hero-name" [(ngModel)]="hero.name">
+<label for="villain-name"> Villain.name: </label>
+<input type="text" id="villain-name" [(ngModel)]="villain.name">
 
-<button type="button" (click)="reset()">Reset Log</button>
+<button type="button" (click)="reset()"> Reset Log</button><br><br>
 
-
+<app-on-changes [villain]="villain"></app-on-changes>

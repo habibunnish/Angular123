@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AdService } from './component2/ad.service';
 import { AdItem } from './component2/AdItem';
-import { Hero } from './component5/hero';
+
 
 
 @Component({
@@ -11,15 +11,10 @@ import { Hero } from './component5/hero';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-[x: string]: Hero;
+
   title = 'newangular';
-  parentMessage="Hello  Child any query approch me ";
-  cMessage='Child sending message';
 
   ads:AdItem[]=[];
-
- 
-
 
   constructor(private adService :AdService){}
   
@@ -38,6 +33,5 @@ toggleName() {
   if (!this.name) this.name = 'Angular';
   this.name += '.';
 }
- 
  
 }

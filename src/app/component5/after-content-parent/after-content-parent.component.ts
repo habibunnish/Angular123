@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./after-content-parent.component.css']
 })
 export class AfterContentParentComponent {
-
+  count:any=1;
+  IncrementCount(){
+    this.count=this.count+1;
+  }
+  DecrementCount(){
+    this.count=this.count-1;
+  }
 }
