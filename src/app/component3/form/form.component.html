@@ -7,7 +7,7 @@
             <input #name="ngModel" required pattern="[a-z]{4}"   maxlength="10"   type="text" name="fname"  class="form-control" ngModel> 
             
             <div *ngIf="name.touched && name.invalid" class="alert alert-danger">invalid
-                <p *ngIf="name.errors ?.['required pattern']">Pattern Required!</p>
+                <p *ngIf="name.errors ?.['pattern']">Pattern Required!</p>
 
                 <p *ngIf="name.errors ?.['maxlength']">Sorry! Very Big Username This Is</p>
             </div>
@@ -23,7 +23,7 @@
             <label for="email">Email </label>
             <input type="text" name="email" required class="form-control" ngModel>
         </div>
-        <button class="btn btn-danger" type="submit"> Submit</button>
+        <button  [disabled]="login.invalid" class="btn btn-danger" type="submit"> Submit</button>
     </form>
 
 </div>

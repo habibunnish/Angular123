@@ -1,0 +1,53 @@
+<div class="container">
+    <h1>REACTIVE FORM</h1>
+    <form [formGroup]="newForm" #formDir="ngForm" >
+        <div [hidden]="formDir.submitted">
+            <div class="cross-Validation" [class.cross-validation-error]="newForm.errors?.['identityRevealed'] && (newForm.touched || newForm.dirty)">invalid
+               
+                <div class="form-group">
+                    <label for="FirstName">FirstName</label>
+                    <input type="text" id="FirstName" class="form-control" formControlName="FirstName" required>
+                    <div **ngIf="FirstName.invalid &&(FirstName.dirty ||FirstName.touched)" class="alert alert-danger">
+                        <div *ngIf="FirstName.errors ?.['required']">FirstName is Required</div>
+                        <div *ngIf="FirstName.errors ?.['minlength']">Name must be at least 4 character long .</div>
+                        <div *ngIf="FirstName.errors ?.['forbiddenName']">Name cannot be bob</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+               <label for="LastName">LastName</label>
+                <input type="text" id="LastName" class="form-control" formControlName="LastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Address">ADDRESS</label>
+                <input type="text" id="Address" class="form-control" formControlName="Address">
+                <div **ngIf="alterEgo.pending">Validating</div>
+                <div **ngIf="alterEgo.invalid" class="alert alert-danger alter-ego-errors">
+                    <div **ngIf="alterEgo.errors ?.['uniqueAlterEgo']">
+                        Address  should be new..
+                    </div>
+                </div>
+            </div>
+
+           <div class="form-group">
+            <label for="Gender">Gender </label>
+            <select id="Gender" class="form-control" formControlName="Gender" required>
+                <option **ngFor="let g of Genders" [value]="g">{{g}}</option>
+            </select>
+            <div **ngIf="Gender.invalid && Gender.touched" class="alert alert-danger">
+                <div **ngIf="Gender.errors ?.['required']">Gender is Required</div>
+            </div>
+           </div>
+
+           <p>Complete the form to enable the submit button</p>
+           <button type="submit" class="btn btn-default" [disabled]="newForm.invalid">Submit</button>
+           <button type="button" class="btn btn-default" (click)="formDir.resetForm({})">Reset</button>
+        </div>
+    </form>
+    <div class="submitted-message" **ngIf="formDir.submitted">
+        <p>You have Submmitted name, {{newForm.value.FirstName}}!</p>
+        <button type="button" (click)="formDir.resetForm({})">ADD NEW DETAILS AGAIN</button>
+    </div>
+</div>
