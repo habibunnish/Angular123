@@ -5,13 +5,14 @@ import { AppComponent } from './app.component';
 import { BasicsComponent } from './component1/basics/basics.component';
 import { AdComponent } from './component2/ad/ad.component';
 import { EmployeeListComponent } from './component3/employee-list/employee-list.component';
-import { FormComponent } from './component3/form/form.component';
 import { SecondBasicsComponent } from './component4/second-basics/second-basics.component';
 import { LifeCyclesComponent } from './component5/life-cycles/life-cycles.component';
 import { HeroesTspComponent } from './FactoryPattern/heroes-tsp/heroes-tsp.component';
 import { DependencyComponent } from './component6/dependency/dependency.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ParentFormComponent } from './component3/parent-form/parent-form.component';
+import { Parent7Component } from './component7/parent7/parent7.component';
+
 
 const routes: Routes = [
   {path:'app',component:AppComponent},
@@ -25,8 +26,9 @@ const routes: Routes = [
   {path:'dependency',component:DependencyComponent},
   {path: 'orders', loadChildren: () => import('./orders/orders.module').then(m => m.OrdersModule) },
   {path:'parent-form',component:ParentFormComponent},
+  {path:'parent7',component:Parent7Component},
   {path:'**',component:PageNotFoundComponent},
- 
+
 ];
 
 @NgModule({

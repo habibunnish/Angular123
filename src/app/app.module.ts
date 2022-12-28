@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -48,8 +49,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ReactiveFormComponent } from './component3/reactive-form/reactive-form.component';
 import { ForbiddenValidatorDirective } from './component3/forbidden-name.directive';
 import { IdentityRevealedValidatorDirective } from './component3/identity-revealed.directive';
-import { UniqueAlterEgoValidatorDirective } from './component3/alter-ego.directive';
+
 import { ParentFormComponent } from './component3/parent-form/parent-form.component';
+import { ObserverGeolocationUpdatesComponent } from './component4/observer-geolocation-updates/observer-geolocation-updates.component';
+import { ConfigComponent } from './component7/config/config.component';
+import { ExampleComponent } from './component7/example/example.component';
+import { Parent7Component } from './component7/parent7/parent7.component';
 
 
 
@@ -79,20 +84,19 @@ import { ParentFormComponent } from './component3/parent-form/parent-form.compon
     HighlightDirective,
     AsyncPromisePipeComponent,
     BasicCheckComponent,
-     EmployeeListComponent,
-     AfterContentParentComponent,
-     ChildViewComponent,
-     ChildComponent,
-     DoCheckParentComponent,
-     OnChangesParentComponent,
-     OnChangesComponent,
-     AfterContentComponent,
-     SpyComponent,
-     SpyDirective,
-     DoCheckParentComponent,
-     InspectorComponent,
-     ParentComponent,
-  
+    EmployeeListComponent,
+    AfterContentParentComponent,
+    ChildViewComponent,
+    ChildComponent,
+    DoCheckParentComponent,
+    OnChangesParentComponent,
+    OnChangesComponent,
+    AfterContentComponent,
+    SpyComponent,
+    SpyDirective,
+    DoCheckParentComponent,
+    InspectorComponent,
+    ParentComponent,
     AsyncObservablePipeComponent,
     HeroListComponent,
     HeroesTspComponent,
@@ -104,8 +108,11 @@ import { ParentFormComponent } from './component3/parent-form/parent-form.compon
     ReactiveFormComponent,
     ForbiddenValidatorDirective,
     IdentityRevealedValidatorDirective,
-    UniqueAlterEgoValidatorDirective,
     ParentFormComponent,
+    ObserverGeolocationUpdatesComponent,
+    ConfigComponent,
+    ExampleComponent,
+    Parent7Component,
  
 
 
@@ -118,6 +125,7 @@ import { ParentFormComponent } from './component3/parent-form/parent-form.compon
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
 
   ],
   providers: [AdService],

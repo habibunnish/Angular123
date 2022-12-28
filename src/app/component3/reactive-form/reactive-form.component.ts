@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { UniqueAlterEgoValidator } from '../alter-ego.directive';
+
 import { forbiddenNameValidator} from '../forbidden-name.directive';
 import { identityRevealedValidator } from '../identity-revealed.directive';
 
@@ -21,10 +21,7 @@ export class ReactiveFormComponent implements OnInit{
         Validators.minLength(4),
         forbiddenNameValidator(/bob/i)    
       ]),
-      alterEgo:new FormControl(this.name.LastName ,{
-        asyncValidators:[this.alterEgoValidator.validate.bind(this.alterEgoValidator)],
-        updateOn :'blur'
-      }),
+     
       Gender:new FormControl(this.name.Gender,Validators.required)
     },{validators:identityRevealedValidator});
   }
@@ -41,6 +38,6 @@ export class ReactiveFormComponent implements OnInit{
   get Address(){
     return this.newForm.get('Address')!;
   }
-  constructor(private alterEgoValidator :UniqueAlterEgoValidator){}
+ 
 
 }
