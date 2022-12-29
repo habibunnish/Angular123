@@ -1,0 +1,63 @@
+<h1 style="color:GREEN;">Http-Get-Method-Example</h1>
+<p>Contacts Details</p>
+
+FIRST-NAME<ul>
+            <li *ngFor="let contact of contactList">{{contact.FirstName}}</li>
+          </ul>
+lAST-NAME<u>
+            <li *ngFor="let contact of contactList">{{contact.LastName}}</li>
+        </u><br>
+
+<p>User Details</p>
+
+FirstName<ul>
+            <li *ngFor="let userDetail of UserDetails">{{userDetail.FIRSTNAME}}</li>
+        </ul>
+LAST-NAME<u>
+            <li *ngFor="let userDetail of UserDetails">{{userDetail.LASTNAME}}</li>
+        </u>
+EMAIL   <ul>
+           <li *ngFor="let userDetail of UserDetails">{{userDetail.EMAIL}}</li>
+        </ul><br><br> 
+    
+ <div *ngIf="msgTrue">USER-DETAILS CREATED SUCCESSFULLY</div><br><hr>
+
+ <br>
+
+<!-- <div *ngIf="MsgTrue">form submitted successfully</div> -->
+
+<h2>Http-Post-Method-Example</h2><br>
+<h3 style="color: blue;">Application form</h3>
+
+<div align="left" class="container mb-3">
+    <form  #addNewContactForm="ngForm" (submit)="addNewContact(addNewContactForm)">
+        <div class="form-group">
+            <label for="FIRSTNAME">First Name </label>
+            <input #name="ngModel" required pattern="[a-z]{5}"   maxlength="10"   type="text" name="FIRSTNAME"  class="form-control" ngModel> 
+            
+            <!-- <div *ngIf="name.touched && name.invalid" class="alert alert-danger">invalid
+                <p *ngIf="name.errors ?.['pattern']">Pattern Required!</p>
+
+                <p *ngIf="name.errors ?.['maxlength']">Sorry! Very Big Username This Is</p>
+            </div> -->
+
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="LASTNAME">Last Name </label>
+            <input type="text" name="LASTNAME"  class="form-control" ngModel>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="EMAIL">Email </label>
+            <input type="text" name="EMAIL" required class="form-control" ngModel>
+        </div>
+        <button class="form-control" [disabled]="addNewContactForm.valid">ADD New Contact Details</button>
+        <!-- <button  [disabled]="!addNewContactFormDetails.invalid" class="btn btn-danger" type="submit"> Submit</button> -->
+    </form>
+
+</div><br>
+
+<button (click)="updateContact(4)">update contact id 4</button>
+<button (click)="deleteContact(4)">delete contact</button>
+

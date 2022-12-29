@@ -12,6 +12,7 @@ import { DependencyComponent } from './component6/dependency/dependency.componen
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ParentFormComponent } from './component3/parent-form/parent-form.component';
 import { Parent7Component } from './component7/parent7/parent7.component';
+import { HttpParentComponent } from './component8/http-parent/http-parent.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path: 'orders', loadChildren: () => import('./orders/orders.module').then(m => m.OrdersModule) },
   {path:'parent-form',component:ParentFormComponent},
   {path:'parent7',component:Parent7Component},
+  {path:'http-parent',component:HttpParentComponent},
   {path:'**',component:PageNotFoundComponent},
 
 ];

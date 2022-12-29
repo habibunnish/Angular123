@@ -55,6 +55,8 @@ import { ObserverGeolocationUpdatesComponent } from './component4/observer-geolo
 import { ConfigComponent } from './component7/config/config.component';
 import { ExampleComponent } from './component7/example/example.component';
 import { Parent7Component } from './component7/parent7/parent7.component';
+import { HttpsGetMethodComponent } from './component8/https-get-method/https-get-method.component';
+import { HttpParentComponent } from './component8/http-parent/http-parent.component';
 
 
 
@@ -113,6 +115,8 @@ import { Parent7Component } from './component7/parent7/parent7.component';
     ConfigComponent,
     ExampleComponent,
     Parent7Component,
+    HttpsGetMethodComponent,
+    HttpParentComponent,
  
 
 
