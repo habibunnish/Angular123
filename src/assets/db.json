@@ -1,51 +1,16 @@
 {
   "contacts": [
     {
-      "id": 10444,
-      "FirstName": "Maha",
-      "LastName": "Lakshmi"
-    },
-    {
-      "id": 10482,
-      "FirstName": "Arth",
-      "LastName": "Meghanathan"
-    },
-    {
-      "FirstName": "bubbly",
-      "LastName": "Singh",
-      "Email": "habicute111@gmail.com",
-      "id": 10488
-    },
-    {
-      "FirstName": "bubbly",
+      "FirstName": "Akash",
       "LastName": "SINGH",
       "Email": "habicute111@gmail.com",
-      "id": 10489
+      "id": 1
     },
     {
-      "FIRSTNAME": "moni",
-      "LASTNAME": "a",
-      "EMAIL": "sasS",
-      "id": 10491
-    },
-    {
-      "FIRSTNAME": "",
-      "LASTNAME": "",
-      "EMAIL": "",
-      "id": 10492
-    },
-    {
-      "FIRSTNAME": "",
-      "LASTNAME": "",
-      "EMAIL": "",
-      "id": 10493
-    }
-  ],
-  "userDetails": [
-    {
-      "FIRSTNAME": "Bubbly",
-      "LASTNAME": "Afroz",
-      "EMAIL": "habicute111@gmail.com"
+      "FirstName": "amarnath",
+      "LastName": "Arumugam",
+      "Email": "amar@3456gmail.com",
+      "id": 2
     }
   ],
   "profile": {

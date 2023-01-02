@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -57,11 +57,7 @@ import { ExampleComponent } from './component7/example/example.component';
 import { Parent7Component } from './component7/parent7/parent7.component';
 import { HttpsGetMethodComponent } from './component8/https-get-method/https-get-method.component';
 import { HttpParentComponent } from './component8/http-parent/http-parent.component';
-
-
-
-
-
+import { LoggingInterceptor } from './component8/logging.interceptor';
 
 
 
@@ -117,10 +113,6 @@ import { HttpParentComponent } from './component8/http-parent/http-parent.compon
     Parent7Component,
     HttpsGetMethodComponent,
     HttpParentComponent,
- 
-
-
- 
    
   ],
 
@@ -132,7 +124,8 @@ import { HttpParentComponent } from './component8/http-parent/http-parent.compon
     HttpClientModule,
 
   ],
-  providers: [AdService],
+  providers: [AdService,{
+    provide: HTTP_INTERCEPTORS , useClass:LoggingInterceptor , multi:true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

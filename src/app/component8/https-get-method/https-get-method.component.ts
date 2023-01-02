@@ -1,4 +1,3 @@
-import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { ContactsService } from '../contacts.service';
 
@@ -8,54 +7,54 @@ import { ContactsService } from '../contacts.service';
   styleUrls: ['./https-get-method.component.css']
 })
 export class HttpsGetMethodComponent implements OnInit{
-deleteContact(arg0: number) {
-throw new Error('Method not implemented.');
-}
+
 
   constructor(private contactsService:ContactsService){}
   msgTrue=false;
-  // MsgTrue=false;
   contactList:any;
-  UserDetails:any;
 
-
+  //get
   ngOnInit(): void {
     this.contactList=this.contactsService.getContacts().subscribe(data=>{
       this.contactList=data;
-    this.UserDetails=this.contactsService.getuserDetails().subscribe(data=>{
-      this.UserDetails=data;
-    })
     });
   }
 
-  addNewContact(form: { value: { FIRSTNAME: any; LASTNAME: any; EMAIL: any; }; }){
-    // const newFormData={
-    //   FirstName:"Bubbly",
-    //   LastName:"SINGH",
-    //   Email:"habicute111@gmail.com"
-    // };
-
-      console.log(form.value.FIRSTNAME);
-      console.log(form.value.LASTNAME);
-      console.log(form.value.EMAIL);
-
-      const newFormData={FIRSTNAME:form.value.FIRSTNAME ,LASTNAME:form.value.LASTNAME, EMAIL:form.value.EMAIL}
-    
-   this.contactsService.createContact(newFormData).subscribe(data=>{
+  //post
+  addNewContact(){
+    const newFormData={
+      FirstName:"amarnath",
+      LastName:"Arumugam",
+      Email:"amar@3456gmail.com"
+    };
+      this.contactsService.createContact(newFormData).subscribe(data=>{
       console.log(data);
       this.msgTrue=true;
     })
   }
   
-  updateContact(EMAIL: any){
-    const newFormData={FIRSTNAME:"bubb" ,LASTNAME:'bo', EMAIL:"habi#123"}
-    this.contactsService.updateContact(EMAIL ,newFormData).subscribe(data=>{
+  //put
+  updateContact(CONTACTId: any){
+    const newFormData={FirstName:'najma' ,LastName:'Khatoon', Email:"najma@498"}
+    this.contactsService.updateContact(CONTACTId ,newFormData).subscribe(data=>{
       console.log(data);
       this.msgTrue=true;
     })
   }
-delteContact(EMAIL: any){
-  this.contactsService.deleteContact(EMAIL);
+
+  //delete
+  deleteContact(FirstName: any){
+     this.contactsService.deleteContact(FirstName).subscribe(data=>{
+      console.log(data);
+      this.msgTrue=true;
+     });
+}
+//param example
+getContact(){
+  this.contactsService.getContactById().subscribe(data=>{
+    console.log(data)
+
+  })
 }
   
 }
