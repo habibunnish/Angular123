@@ -8,7 +8,7 @@ export class SalutationPipe implements PipeTransform {
   transform(size:Number,_sname:String): String {
     if(10<=size &&size<=19){
       return "S";
-      return "sname";
+     
      }
      else if (20<=size &&size<=26){
       return "M";

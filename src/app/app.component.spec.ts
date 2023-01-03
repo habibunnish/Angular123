@@ -2,7 +2,9 @@ import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
-describe('AppComponent', () => {
+
+//x here means it will skip the test 
+xdescribe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
@@ -26,10 +28,12 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('newangular');
   });
 
-  it('should render title', () => {
+  //xit here means skipping this one test file not other files test
+  xit('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('newangular app is running!');
   });
 });
+

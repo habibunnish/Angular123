@@ -40,7 +40,7 @@ import { ParentComponent } from './component6/parent/parent.component';
 import { AsyncObservablePipeComponent } from './component4/async-observable-pipe/async-observable-pipe.component';
 import { HeroListComponent } from './FactoryPattern/hero-list/hero-list.component';
 import { HeroesTspComponent } from './FactoryPattern/heroes-tsp/heroes-tsp.component';
-import { HeroesComponent } from './FactoryPattern/heroes/heroes.component';
+
 import { BasicsComponent } from './component1/basics/basics.component';
 import { SecondBasicsComponent } from './component4/second-basics/second-basics.component';
 import { LifeCyclesComponent } from './component5/life-cycles/life-cycles.component';
@@ -58,6 +58,8 @@ import { Parent7Component } from './component7/parent7/parent7.component';
 import { HttpsGetMethodComponent } from './component8/https-get-method/https-get-method.component';
 import { HttpParentComponent } from './component8/http-parent/http-parent.component';
 import { LoggingInterceptor } from './component8/logging.interceptor';
+import { DemoComponent } from './Testing/demo/demo.component';
+import { TitleCasePipe } from './title-case.pipe';
 
 
 
@@ -98,7 +100,7 @@ import { LoggingInterceptor } from './component8/logging.interceptor';
     AsyncObservablePipeComponent,
     HeroListComponent,
     HeroesTspComponent,
-    HeroesComponent,
+   
     SecondBasicsComponent,
     LifeCyclesComponent,
     DependencyComponent,
@@ -113,6 +115,10 @@ import { LoggingInterceptor } from './component8/logging.interceptor';
     Parent7Component,
     HttpsGetMethodComponent,
     HttpParentComponent,
+    DemoComponent,
+    TitleCasePipe,
+ 
+ 
    
   ],
 

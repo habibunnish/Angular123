@@ -10,5 +10,6 @@ export class CustomPipesComponent {
       sname:'Bubbly',
       size:32,
    }
+titleCase: any;
    constructor(){}
 }

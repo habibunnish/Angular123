@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { config } from 'rxjs';
 import { Config, ConfigService } from '../config.service';
 
 @Component({

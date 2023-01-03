@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./parent-form.component.css']
 })
 export class ParentFormComponent {
-
+  title='hello-habibunnisha'
 }
