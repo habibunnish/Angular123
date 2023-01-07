@@ -12,7 +12,7 @@ export class ContactsService {
   //getMethod
   getContacts(){
     const httpHeaders=new HttpHeaders()
-    httpHeaders.append('content-type' , 'application/json');;
+    httpHeaders.append('content-type' , 'application/json');
   return this.httpClient.get('http://localhost:3000/contacts',{headers:httpHeaders});
                                                                                                  
   }                                                                                                                                                                                                                                                                            

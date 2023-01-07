@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { DemoComponent } from './demo.component';
 
-//componentdom testing method
+// //componentdom testing method
 // describe('DemoComponent', () => {
 //   let component: DemoComponent;
 //   let fixture: ComponentFixture<DemoComponent>;
@@ -24,7 +24,7 @@ import { DemoComponent } from './demo.component';
 //   });
 // });
 
-//reducing setup method
+// //reducing setup method
 // describe('DemoComponent (minimal)',()=>{
 //   it('should create' , ()=>{
 //     TestBed.configureTestingModule({declarations :[DemoComponent]});
